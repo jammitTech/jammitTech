@@ -2,23 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Red Test Page</title>
-  <style>
-    body {
-      background-color: red;
-    }
-  </style>
+  <title>Find on Google Maps</title>
 </head>
 <body>
-  <h1>This is a test page with a red background</h1>
-  <p><font color="green"> Hello World! </font> </p>
-  <h1><font color="red"> Hello World! </font> </h1>
-  <h2><font color="black"> Hello World! </font> </h2>
-  <h3><font color="yellow"> Hello World! </font> </h3>
-  <h4><font color="purple"> Hello World! </font> </h4>
-  <h5><font color="orange"> Hello World! </font> </h5>
-  <h6><font color="blue"> Hello World! </font> </h6>
-  <img src="./img/logo.png" alt="github_Logo" style="width:200px;height:200px;">
+  <h1>Look Up Address on Google Maps</h1>
+  <p>Enter an address below and click "Find on Maps" to open it in Google Maps.</p>
+  <form action="https://maps.google.com/" method="get" target="_blank">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="q">
+    <button type="submit">Find on Maps</button>
+  </form>
 </body>
 </html>
-
